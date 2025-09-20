@@ -1,0 +1,51 @@
+Python <3.11.9>
+
+1) Create a python environment.
+> python -m venv .venv
+
+2) Activate the environment.
+> .venv\scripts\activate
+
+3) Install requirements.
+> pip install -r requirements.txt
+
+4) Run the API locally
+> uvicorn app.main:app --reload
+
+5) For CORS, If the origin is not allowed, we can add the origin in ""app/config.py"". There in the ""ALLOWED_ORIGINS"" List variable, paste the origin url.
+
+6) Access the end point 
+> <LOCAL URL>/landmap/generate
+
+
+....POSTMAN....
+
+1) Bearer Token
+> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTb21lLXRlc3QtdXNlci0xMjM0NSIsInJvbGUiOiJBZG1pbl9UZXN0IiwiZXhwIjo4ODE1ODAyMjI4N30.EKD2bGCZ4KzaVrxjtf2wWE9XYIzbS_V-VKGPQIHsuyY
+
+2) Add the Bearer token under authorization > Select Bearer Token > paste this token
+
+3) In the Bodly, select raw and paste the json payload
+
+Example:
+{
+  "land_area": [
+    {
+      "latitude": 23.77059158003182,
+      "longitude": 90.4059435510674
+    },
+    {
+      "latitude": 23.768004012086546,
+      "longitude": 90.40556006776123
+    },
+    {
+      "latitude": 23.768386947388315,
+      "longitude": 90.40291004522925
+    },
+    {
+      "latitude": 23.77093982059538,
+      "longitude": 90.40333919867572
+    }
+  ]
+}
+
