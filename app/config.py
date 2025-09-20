@@ -9,7 +9,7 @@ class Settings:
     SECRET_KEY:str = os.getenv("SECRET_KEY")
     ALGORITHM:str = os.getenv("ALGORITHM")
 
-    ALLOWED_ORIGINS:List = ["https://centralportal.insurecow.com","http://localhost:3000","https://centralportal.insurecow.com/"]
+    ALLOWED_ORIGINS:List = ["https://centralportal.insurecow.com", "http://localhost:3000", "https://cropploting.dev.insurecow.com"]
     
     DEFAULT_BUFFER_ZONE:int = 7 
     DEFAULT_PLOT_SIZE:int = 5
