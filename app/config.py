@@ -15,7 +15,7 @@ class Settings:
     DEFAULT_PLOT_SIZE:int = 5
     DEFAULT_FIG_SIZE: Tuple = (17, 17)
 
-    MINIMUM_LAND_AREA: float = 400.00  # minimum land area in square meter (m²), required for a plotting the box
+    MINIMUM_LAND_AREA: float = 200.00  # minimum land area in square meter (m²), required for a plotting the box
 
     DEBUG: bool = True
 
